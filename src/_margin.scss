@@ -1,0 +1,230 @@
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mr-0 {
+  margin-right: 0 !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.ml-0 {
+  margin-left: 0 !important;
+}
+
+.mv-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.mh-0 {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.m-a {
+  margin: auto !important;
+}
+
+.mt-a {
+  margin-top: auto !important;
+}
+
+.mr-a {
+  margin-right: auto !important;
+}
+
+.mb-a {
+  margin-bottom: auto !important;
+}
+
+.ml-a {
+  margin-left: auto !important;
+}
+
+.mv-a {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+.mh-a {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.m {
+  margin: $space !important;
+}
+
+.mt {
+  margin-top: $space !important;
+}
+
+.mr {
+  margin-right: $space !important;
+}
+
+.mb {
+  margin-bottom: $space !important;
+}
+
+.ml {
+  margin-left: $space !important;
+}
+
+.mv {
+  margin-top: $space !important;
+  margin-bottom: $space !important;
+}
+
+.mh {
+  margin-right: $space !important;
+  margin-left: $space !important;
+}
+
+
+@each $multiplier in $multipliers {
+
+  .m-#{$multiplier}x {
+    margin: $space * $multiplier !important;
+  }
+
+  .mt-#{$multiplier}x {
+    margin-top: $space * $multiplier !important;
+  }
+
+  .mr-#{$multiplier}x {
+    margin-top: $space * $multiplier !important;
+  }
+
+  .mb-#{$multiplier}x {
+    margin-top: $space * $multiplier !important;
+  }
+
+  .ml-#{$multiplier}x {
+    margin-top: $space * $multiplier !important;
+  }
+
+  .mv-#{$multiplier}x {
+    margin-top: $space * $multiplier !important;
+    margin-bottom: $space * $multiplier !important;
+  }
+
+  .mh-#{$multiplier}x {
+    margin-right: $space * $multiplier !important;
+    margin-left: $space * $multiplier !important;
+  }
+
+}
+
+  @each $size in $sizes {
+
+    $name: nth($size, 1);
+    $breakpoint: nth($size, 2);
+
+    @media #{$breakpoint} {
+
+      .m-#{$name}-0 {
+        margin: 0 !important;
+      }
+
+      .mt-#{$name}-0 {
+        margin-top: 0 !important;
+      }
+
+      .mr-#{$name}-0 {
+        margin-right: 0 !important;
+      }
+
+      .mb-#{$name}-0 {
+        margin-bottom: 0 !important;
+      }
+
+      .ml-#{$name}-0 {
+        margin-left: 0 !important;
+      }
+
+      .mv-#{$name}-0 {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+      }
+
+      .mh-#{$name}-0 {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+      }
+
+      .m-#{$name} {
+        margin: $space !important;
+      }
+
+      .mt-#{$name} {
+        margin-top: $space !important;
+      }
+
+      .mr-#{$name} {
+        margin-right: $space !important;
+      }
+
+      .mb-#{$name} {
+        margin-bottom: $space !important;
+      }
+
+      .ml-#{$name} {
+        margin-left: $space !important;
+      }
+
+      .mv-#{$name} {
+        margin-top: $space !important;
+        margin-bottom: $space !important;
+      }
+
+      .mh-#{$name} {
+        margin-right: $space !important;
+        margin-left: $space !important;
+      }
+
+      @each $multiplier in $multipliers {
+
+        .m-#{$name}-#{$multiplier}x {
+          margin: $space * $multiplier !important;
+        }
+
+        .mt-#{$name}-#{$multiplier}x {
+          margin-top: $space * $multiplier !important;
+        }
+
+        .mr-#{$name}-#{$multiplier}x {
+          margin-right: $space * $multiplier !important;
+        }
+
+        .mb-#{$name}-#{$multiplier}x {
+          margin-bottom: $space * $multiplier !important;
+        }
+
+        .ml-#{$name}-#{$multiplier}x {
+          margin-left: $space * $multiplier !important;
+        }
+
+        .mv-#{$name}-#{$multiplier}x {
+          margin-top: $space * $multiplier !important;
+          margin-bottom: $space * $multiplier !important;
+        }
+
+        .mh-#{$name}-#{$multiplier}x {
+          margin-right: $space * $multiplier !important;
+          margin-left: $space * $multiplier !important;
+        }
+
+      }
+
+    }
+
+  }

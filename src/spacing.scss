@@ -1,0 +1,12 @@
+$space: 1rem;
+$multipliers: (2,3,4,5);
+$sizes: (
+  (small, '(min-width: 320px) and (max-width: 480px)'),
+  (medium, '(min-width: 481px) and (max-width: 767px)'),
+  (large, '(min-width: 768px) and (max-width: 1024px)'),
+  (xlarge, '(min-width: 1025px) and (max-width: 1280px)'),
+  (xxlarge, '(min-width: 1281px)')
+);
+
+@import "padding";
+@import "margin";

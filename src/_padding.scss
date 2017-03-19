@@ -1,0 +1,200 @@
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.pr-0 {
+  padding-right: 0 !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+.pv-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.ph-0 {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.p {
+  padding: $space !important;
+}
+
+.pt {
+  padding-top: $space !important;
+}
+
+.pr {
+  padding-right: $space !important;
+}
+
+.pb {
+  padding-bottom: $space !important;
+}
+
+.pl {
+  padding-left: $space !important;
+}
+
+.pv {
+  padding-top: $space !important;
+  padding-bottom: $space !important;
+}
+
+.ph {
+  padding-right: $space !important;
+  padding-left: $space !important;
+}
+
+
+@each $multiplier in $multipliers {
+
+  .p-#{$multiplier}x {
+    padding: $space * $multiplier !important;
+  }
+
+  .pt-#{$multiplier}x {
+    padding-top: $space * $multiplier !important;
+  }
+
+  .pr-#{$multiplier}x {
+    padding-right: $space * $multiplier !important;
+  }
+
+  .pb-#{$multiplier}x {
+    padding-bottom: $space * $multiplier !important;
+  }
+
+  .pl-#{$multiplier}x {
+    padding-left: $space * $multiplier !important;
+  }
+
+  .pv-#{$multiplier}x {
+    padding-top: $space * $multiplier !important;
+    padding-bottom: $space * $multiplier !important;
+  }
+
+  .ph-#{$multiplier}x {
+    padding-right: $space * $multiplier !important;
+    padding-left: $space * $multiplier !important;
+  }
+
+}
+
+  @each $size in $sizes {
+
+    $name: nth($size, 1);
+    $breakpoint: nth($size, 2);
+
+    @media #{$breakpoint} {
+
+      .p-#{$name}-0 {
+        padding: 0 !important;
+      }
+
+      .pt-#{$name}-0 {
+        padding-top: 0 !important;
+      }
+
+      .pr-#{$name}-0 {
+        padding-right: 0 !important;
+      }
+
+      .pb-#{$name}-0 {
+        padding-bottom: 0 !important;
+      }
+
+      .pl-#{$name}-0 {
+        padding-left: 0 !important;
+      }
+
+      .pv-#{$name}-0 {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+      }
+
+      .ph-#{$name}-0 {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+      }
+
+      .p-#{$name} {
+        padding: $space !important;
+      }
+
+      .pt-#{$name} {
+        padding-top: $space !important;
+      }
+
+      .pr-#{$name} {
+        padding-right: $space !important;
+      }
+
+      .pb-#{$name} {
+        padding-bottom: $space !important;
+      }
+
+      .pl-#{$name} {
+        padding-left: $space !important;
+      }
+
+      .pv-#{$name} {
+        padding-top: $space !important;
+        padding-bottom: $space !important;
+      }
+
+      .ph-#{$name} {
+        padding-right: $space !important;
+        padding-left: $space !important;
+      }
+
+      @each $multiplier in $multipliers {
+
+        .p-#{$name}-#{$multiplier}x {
+          padding: $space * $multiplier !important;
+        }
+
+        .pt-#{$name}-#{$multiplier}x {
+          padding-top: $space * $multiplier !important;
+        }
+
+        .pr-#{$name}-#{$multiplier}x {
+          padding-top: $space * $multiplier !important;
+        }
+
+        .pb-#{$name}-#{$multiplier}x {
+          padding-top: $space * $multiplier !important;
+        }
+
+        .pl-#{$name}-#{$multiplier}x {
+          padding-top: $space * $multiplier !important;
+        }
+
+        .pv-#{$name}-#{$multiplier}x {
+          padding-top: $space * $multiplier !important;
+          padding-bottom: $space * $multiplier !important;
+        }
+
+        .ph-#{$name}-#{$multiplier}x {
+          padding-right: $space * $multiplier !important;
+          padding-left: $space * $multiplier !important;
+        }
+
+      }
+
+    }
+
+  }
