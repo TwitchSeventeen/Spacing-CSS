@@ -8,5 +8,16 @@ $sizes: (
   (xxlarge, '(min-width: 1281px)')
 );
 
+
+
+// Change these if you want to follow another naming convention
+// e.g. for BEM
+
+// Used between property/direction and size
+$delimiter1: '-';
+
+// Used between size and multiplier
+$delimiter2: '-';
+
 @import "padding";
 @import "margin";

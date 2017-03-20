@@ -62,32 +62,32 @@
 
 @each $multiplier in $multipliers {
 
-  .p-#{$multiplier}x {
+  .p#{$delimiter1}#{$multiplier}x {
     padding: $space * $multiplier !important;
   }
 
-  .pt-#{$multiplier}x {
+  .pt#{$delimiter1}#{$multiplier}x {
     padding-top: $space * $multiplier !important;
   }
 
-  .pr-#{$multiplier}x {
+  .pr#{$delimiter1}#{$multiplier}x {
     padding-right: $space * $multiplier !important;
   }
 
-  .pb-#{$multiplier}x {
+  .pb#{$delimiter1}#{$multiplier}x {
     padding-bottom: $space * $multiplier !important;
   }
 
-  .pl-#{$multiplier}x {
+  .pl#{$delimiter1}#{$multiplier}x {
     padding-left: $space * $multiplier !important;
   }
 
-  .pv-#{$multiplier}x {
+  .pv#{$delimiter1}#{$multiplier}x {
     padding-top: $space * $multiplier !important;
     padding-bottom: $space * $multiplier !important;
   }
 
-  .ph-#{$multiplier}x {
+  .ph#{$delimiter1}#{$multiplier}x {
     padding-right: $space * $multiplier !important;
     padding-left: $space * $multiplier !important;
   }
@@ -101,94 +101,94 @@
 
     @media #{$breakpoint} {
 
-      .p-#{$name}-0 {
+      .p#{$delimiter1}#{$name}#{$delimiter2}0 {
         padding: 0 !important;
       }
 
-      .pt-#{$name}-0 {
+      .pt#{$delimiter1}#{$name}#{$delimiter2}0 {
         padding-top: 0 !important;
       }
 
-      .pr-#{$name}-0 {
+      .pr#{$delimiter1}#{$name}#{$delimiter2}0 {
         padding-right: 0 !important;
       }
 
-      .pb-#{$name}-0 {
+      .pb#{$delimiter1}#{$name}#{$delimiter2}0 {
         padding-bottom: 0 !important;
       }
 
-      .pl-#{$name}-0 {
+      .pl#{$delimiter1}#{$name}#{$delimiter2}0 {
         padding-left: 0 !important;
       }
 
-      .pv-#{$name}-0 {
+      .pv#{$delimiter1}#{$name}#{$delimiter2}0 {
         padding-top: 0 !important;
         padding-bottom: 0 !important;
       }
 
-      .ph-#{$name}-0 {
+      .ph#{$delimiter1}#{$name}#{$delimiter2}0 {
         padding-right: 0 !important;
         padding-left: 0 !important;
       }
 
-      .p-#{$name} {
+      .p#{$delimiter1}#{$name} {
         padding: $space !important;
       }
 
-      .pt-#{$name} {
+      .pt#{$delimiter1}#{$name} {
         padding-top: $space !important;
       }
 
-      .pr-#{$name} {
+      .pr#{$delimiter1}#{$name} {
         padding-right: $space !important;
       }
 
-      .pb-#{$name} {
+      .pb#{$delimiter1}#{$name} {
         padding-bottom: $space !important;
       }
 
-      .pl-#{$name} {
+      .pl#{$delimiter1}#{$name} {
         padding-left: $space !important;
       }
 
-      .pv-#{$name} {
+      .pv#{$delimiter1}#{$name} {
         padding-top: $space !important;
         padding-bottom: $space !important;
       }
 
-      .ph-#{$name} {
+      .ph#{$delimiter1}#{$name} {
         padding-right: $space !important;
         padding-left: $space !important;
       }
 
       @each $multiplier in $multipliers {
 
-        .p-#{$name}-#{$multiplier}x {
+        .p#{$delimiter1}#{$name}#{$delimiter2}#{$multiplier}x {
           padding: $space * $multiplier !important;
         }
 
-        .pt-#{$name}-#{$multiplier}x {
+        .pt#{$delimiter1}#{$name}#{$delimiter2}#{$multiplier}x {
           padding-top: $space * $multiplier !important;
         }
 
-        .pr-#{$name}-#{$multiplier}x {
+        .pr#{$delimiter1}#{$name}#{$delimiter2}#{$multiplier}x {
           padding-top: $space * $multiplier !important;
         }
 
-        .pb-#{$name}-#{$multiplier}x {
+        .pb#{$delimiter1}#{$name}#{$delimiter2}#{$multiplier}x {
           padding-top: $space * $multiplier !important;
         }
 
-        .pl-#{$name}-#{$multiplier}x {
+        .pl#{$delimiter1}#{$name}#{$delimiter2}#{$multiplier}x {
           padding-top: $space * $multiplier !important;
         }
 
-        .pv-#{$name}-#{$multiplier}x {
+        .pv#{$delimiter1}#{$name}#{$delimiter2}#{$multiplier}x {
           padding-top: $space * $multiplier !important;
           padding-bottom: $space * $multiplier !important;
         }
 
-        .ph-#{$name}-#{$multiplier}x {
+        .ph#{$delimiter1}#{$name}#{$delimiter2}#{$multiplier}x {
           padding-right: $space * $multiplier !important;
           padding-left: $space * $multiplier !important;
         }

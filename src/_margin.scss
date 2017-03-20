@@ -1,60 +1,60 @@
 
-.m-0 {
+.m#{$delimiter1}0 {
   margin: 0 !important;
 }
 
-.mt-0 {
+.mt#{$delimiter1}0 {
   margin-top: 0 !important;
 }
 
-.mr-0 {
+.mr#{$delimiter1}0 {
   margin-right: 0 !important;
 }
 
-.mb-0 {
+.mb#{$delimiter1}0 {
   margin-bottom: 0 !important;
 }
 
-.ml-0 {
+.ml#{$delimiter1}0 {
   margin-left: 0 !important;
 }
 
-.mv-0 {
+.mv#{$delimiter1}0 {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
 
-.mh-0 {
+.mh#{$delimiter1}0 {
   margin-right: 0 !important;
   margin-left: 0 !important;
 }
 
-.m-a {
+.m#{$delimiter1}a {
   margin: auto !important;
 }
 
-.mt-a {
+.mt#{$delimiter1}a {
   margin-top: auto !important;
 }
 
-.mr-a {
+.mr#{$delimiter1}a {
   margin-right: auto !important;
 }
 
-.mb-a {
+.mb#{$delimiter1}a {
   margin-bottom: auto !important;
 }
 
-.ml-a {
+.ml#{$delimiter1}a {
   margin-left: auto !important;
 }
 
-.mv-a {
+.mv#{$delimiter1}a {
   margin-top: auto !important;
   margin-bottom: auto !important;
 }
 
-.mh-a {
+.mh#{$delimiter1}a {
   margin-right: auto !important;
   margin-left: auto !important;
 }
@@ -92,32 +92,32 @@
 
 @each $multiplier in $multipliers {
 
-  .m-#{$multiplier}x {
+  .m#{$delimiter1}#{$multiplier}x {
     margin: $space * $multiplier !important;
   }
 
-  .mt-#{$multiplier}x {
+  .mt#{$delimiter1}#{$multiplier}x {
     margin-top: $space * $multiplier !important;
   }
 
-  .mr-#{$multiplier}x {
+  .mr#{$delimiter1}#{$multiplier}x {
     margin-top: $space * $multiplier !important;
   }
 
-  .mb-#{$multiplier}x {
+  .mb#{$delimiter1}#{$multiplier}x {
     margin-top: $space * $multiplier !important;
   }
 
-  .ml-#{$multiplier}x {
+  .ml#{$delimiter1}#{$multiplier}x {
     margin-top: $space * $multiplier !important;
   }
 
-  .mv-#{$multiplier}x {
+  .mv#{$delimiter1}#{$multiplier}x {
     margin-top: $space * $multiplier !important;
     margin-bottom: $space * $multiplier !important;
   }
 
-  .mh-#{$multiplier}x {
+  .mh#{$delimiter1}#{$multiplier}x {
     margin-right: $space * $multiplier !important;
     margin-left: $space * $multiplier !important;
   }
@@ -135,90 +135,90 @@
         margin: 0 !important;
       }
 
-      .mt-#{$name}-0 {
+      .mt#{$delimiter1}#{$name}#{$delimiter2}0 {
         margin-top: 0 !important;
       }
 
-      .mr-#{$name}-0 {
+      .mr#{$delimiter1}#{$name}#{$delimiter2}0 {
         margin-right: 0 !important;
       }
 
-      .mb-#{$name}-0 {
+      .mb#{$delimiter1}#{$name}#{$delimiter2}0 {
         margin-bottom: 0 !important;
       }
 
-      .ml-#{$name}-0 {
+      .ml#{$delimiter1}#{$name}#{$delimiter2}0 {
         margin-left: 0 !important;
       }
 
-      .mv-#{$name}-0 {
+      .mv#{$delimiter1}#{$name}#{$delimiter2}0 {
         margin-top: 0 !important;
         margin-bottom: 0 !important;
       }
 
-      .mh-#{$name}-0 {
+      .mh#{$delimiter1}#{$name}#{$delimiter2}0 {
         margin-right: 0 !important;
         margin-left: 0 !important;
       }
 
-      .m-#{$name} {
+      .m#{$delimiter1}#{$name} {
         margin: $space !important;
       }
 
-      .mt-#{$name} {
+      .mt#{$delimiter1}#{$name} {
         margin-top: $space !important;
       }
 
-      .mr-#{$name} {
+      .mr#{$delimiter1}#{$name} {
         margin-right: $space !important;
       }
 
-      .mb-#{$name} {
+      .mb#{$delimiter1}#{$name} {
         margin-bottom: $space !important;
       }
 
-      .ml-#{$name} {
+      .ml#{$delimiter1}#{$name} {
         margin-left: $space !important;
       }
 
-      .mv-#{$name} {
+      .mv#{$delimiter1}#{$name} {
         margin-top: $space !important;
         margin-bottom: $space !important;
       }
 
-      .mh-#{$name} {
+      .mh#{$delimiter1}#{$name} {
         margin-right: $space !important;
         margin-left: $space !important;
       }
 
       @each $multiplier in $multipliers {
 
-        .m-#{$name}-#{$multiplier}x {
+        .m#{$delimiter1}#{$name}#{$delimiter2}#{$multiplier}x {
           margin: $space * $multiplier !important;
         }
 
-        .mt-#{$name}-#{$multiplier}x {
+        .mt#{$delimiter1}#{$name}#{$delimiter2}#{$multiplier}x {
           margin-top: $space * $multiplier !important;
         }
 
-        .mr-#{$name}-#{$multiplier}x {
+        .mr#{$delimiter1}#{$name}#{$delimiter2}#{$multiplier}x {
           margin-right: $space * $multiplier !important;
         }
 
-        .mb-#{$name}-#{$multiplier}x {
+        .mb#{$delimiter1}#{$name}#{$delimiter2}#{$multiplier}x {
           margin-bottom: $space * $multiplier !important;
         }
 
-        .ml-#{$name}-#{$multiplier}x {
+        .ml#{$delimiter1}#{$name}#{$delimiter2}#{$multiplier}x {
           margin-left: $space * $multiplier !important;
         }
 
-        .mv-#{$name}-#{$multiplier}x {
+        .mv#{$delimiter1}#{$name}#{$delimiter2}#{$multiplier}x {
           margin-top: $space * $multiplier !important;
           margin-bottom: $space * $multiplier !important;
         }
 
-        .mh-#{$name}-#{$multiplier}x {
+        .mh#{$delimiter1}#{$name}#{$delimiter2}#{$multiplier}x {
           margin-right: $space * $multiplier !important;
           margin-left: $space * $multiplier !important;
         }
