@@ -161,6 +161,36 @@
         margin-left: 0 !important;
       }
 
+      .m-#{$name}-a {
+        margin: auto !important;
+      }
+
+      .mt#{$delimiter1}#{$name}#{$delimiter2}a {
+        margin-top: auto !important;
+      }
+
+      .mr#{$delimiter1}#{$name}#{$delimiter2}a {
+        margin-right: auto !important;
+      }
+
+      .mb#{$delimiter1}#{$name}#{$delimiter2}a {
+        margin-bottom: auto !important;
+      }
+
+      .ml#{$delimiter1}#{$name}#{$delimiter2}a {
+        margin-left: auto !important;
+      }
+
+      .mv#{$delimiter1}#{$name}#{$delimiter2}a {
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+      }
+
+      .mh#{$delimiter1}#{$name}#{$delimiter2}a {
+        margin-right: auto !important;
+        margin-left: auto !important;
+      }
+
       .m#{$delimiter1}#{$name} {
         margin: $space !important;
       }
