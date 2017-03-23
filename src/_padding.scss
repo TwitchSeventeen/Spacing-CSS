@@ -172,15 +172,15 @@
         }
 
         .pr#{$delimiter1}#{$name}#{$delimiter2}#{$multiplier}x {
-          padding-top: $space * $multiplier !important;
+          padding-right: $space * $multiplier !important;
         }
 
         .pb#{$delimiter1}#{$name}#{$delimiter2}#{$multiplier}x {
-          padding-top: $space * $multiplier !important;
+          padding-bottom: $space * $multiplier !important;
         }
 
         .pl#{$delimiter1}#{$name}#{$delimiter2}#{$multiplier}x {
-          padding-top: $space * $multiplier !important;
+          padding-left: $space * $multiplier !important;
         }
 
         .pv#{$delimiter1}#{$name}#{$delimiter2}#{$multiplier}x {
