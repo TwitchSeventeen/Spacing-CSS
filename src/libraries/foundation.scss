@@ -1,0 +1,13 @@
+$space: 1rem;
+$multipliers: (2,3,4,5);
+$sizes: (
+                (small, '(max-width: 39.9375em)'),
+                (medium, '(min-width: 40em)'),
+                (large, '(min-width: 64em)'),
+);
+
+$delimiter1: '-';
+$delimiter2: '-';
+
+@import "../padding";
+@import "../margin";
