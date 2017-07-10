@@ -16,7 +16,7 @@
             <div class="column col-3 col-md-4 col-sm-12">
                 <ul class="menu m">
                     <li class="menu-item">
-                        <a href="index.html" class="active">Spacing CSS</a>
+                        <a href="index.html">Spacing CSS</a>
                     </li>
                     <li class="divider"></li>
 
@@ -38,36 +38,32 @@
                         <a href="bootstrap.html">Bootstrap 3</a>
                     </li>
                     <li class="menu-item">
-                        <a href="bootstrap4.html">Bootstrap 4</a>
+                        <a href="bootstrap4.html" class="active">Bootstrap 4</a>
                     </li>
                 </ul>
             </div>
             <div class="column col-9 col-md-8 col-sm-12">
 
-                <h2 class="mt">Spacing CSS</h2>
-                <p>Spacing CSS is a CSS library for adding responsive margin / padding utility classes. It's sole purpose is to add space between elements.</p>
+                <h2 class="mt">Bootstrap 4</h2>
+                <p><strong>NOTE:</strong> Bootstrap 4 already has it's own spacing library and you should use it instead. You can find it <a href="https://getbootstrap.com/docs/4.0/utilities/spacing/" target="_blank" rel="noopener">here</a>.</p>
+                <p>This is a Spacing CSS build specifically for <a href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap 4</a></p>
 
-                <h3 class="mt-2x">Usage</h3>
+                <h3 class="mt-2x">Spacing class changes</h3>
+                <p>In the Bootstrap build, spacing classes are almost the same as the regular build - but the media queries have been changed.</p>
 
-Include the spacing.css file in the &#60;head> of your webpage.
-                <pre><code class="html">
-&#60;head>
-    &#60;link rel="stylesheet" href="/dist/spacing.min.css">
-&#60;/head>
-                </code></pre>
+                <h4 class="mt-2x">Media queries</h4>
+                <p>The Bootstrap 4 build uses Bootstrap 4 default media queries. This means Spacing CSS will work out of the box with the Bootstrap grid system.</p>
+                <pre class="code"><code class="text">sm - min-width: 576px
+md - min-width: 768px
+lg - min-width: 992px
+xl - min-width: 1200px</code></pre>
 
-                <p class="mt-2x">Then add classes to elements to create margins and padding.</p>
-                <pre><code class="html">
-    &#60;p class="mt">Top margin of 1rem&#60;/p>
-    &#60;p class="pl-2x">Left padding of 2rem&#60;/p>
-                </code></pre>
 
-                <h3 class="mt-2x">Spacing Classes</h3>
-                Each spacing class is created in the following format:
-                <pre class="code"><code>(property)(direction)-(mediaQuery)-(multiplier)</code></pre>
-                Only <em>property</em> is required, the rest can be omitted.
 
-                <p class="mt-2x">Take a look at <a href="classes.html">spacing classes</a> for all of the possible options.</p>
+                <p class="mt-2x">This will apply a top padding of 1rem on medium screens and above. On small screens the column will become full width and the padding will be removed.</p>
+                <pre class="code"><code class="html">&#60;div class="col-md-6 pt-medium">
+    Lorem ipsum dolor sit amet
+&#60;/div></code></pre>
 
             </div>
             </div>
