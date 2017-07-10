@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Docs</title>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <link rel="stylesheet" href="../dist/spacing.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+    <div class="container grid-xl">
+        <div class="columns">
+            <div class="column col-3 col-md-4 col-sm-12">
+                <ul class="menu m">
+                    <li class="menu-item">
+                        <a href="index.html">Spacing CSS</a>
+                    </li>
+                    <li class="divider"></li>
+
+                    <li class="menu-item">
+                        <a href="classes.html">spacing classes</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="scss.html">SCSS variables</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="gulp.html" class="active">Gulp</a>
+                    </li>
+
+                    <li class="divider" data-content="LIBRARY BUILDS"></li>
+                    <li class="menu-item">
+                        <a href="foundation.html">Foundation</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="bootstrap.html">Bootstrap</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="column col-9 col-md-8 col-sm-12">
+
+                <h2 class="mt">Gulp</h2>
+                <p>Gulp commands are found in <code>gulpfile.js</code></p>
+
+                <h4 class="mt-2x">default</h4>
+                <p>Starts a file watcher, runs the <code>gulp sass</code> comand</p>
+
+                <h4 class="mt-2x">sass</h4>
+                <p>Compiles all <code>.scss</code> files and outputs them into the <code>/dist</code> directory. These files are not compressed and should <strong>not be used in production</strong>.</p>
+
+
+                <h4 class="mt-2x">minify</h4>
+                <p>Compiles all <code>.scss</code> files, minifys them and outputs them into the <code>/dist</code> directory. These files are ready for production use.</p>
+
+            </div>
+            </div>
+        </div>
+
+
+
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Docs</title>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <link rel="stylesheet" href="../dist/spacing.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+    <div class="container grid-xl">
+        <div class="columns">
+            <div class="column col-3 col-md-4 col-sm-12">
+                <ul class="menu m">
+                    <li class="menu-item">
+                        <a href="index.html">Spacing CSS</a>
+                    </li>
+                    <li class="divider"></li>
+
+                    <li class="menu-item">
+                        <a href="classes.html">spacing classes</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="scss.html" class="active">SCSS variables</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="gulp.html">Gulp</a>
+                    </li>
+
+                    <li class="divider" data-content="LIBRARY BUILDS"></li>
+                    <li class="menu-item">
+                        <a href="foundation.html">Foundation</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="bootstrap.html">Bootstrap</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="column col-9 col-md-8 col-sm-12">
+
+                <h2 class="mt">SCSS Variables</h2>
+                <p>Default SCSS variables can be found in the <code>spacing.scss</code> file</p>
+
+                <h4 class="mt-2x">$space</h4>
+                <p>The length of a single unit of margin or padding. By default it is <strong>1rem</strong>.</p>
+                <pre class="code"><code class="scss">$space: 1rem;</code></pre>
+
+                <h4 class="mt-2x">$multipliers</h4>
+                <p>An array of multipliers. By default it is <strong>(2,3,4,5)</strong></p>
+                <p>Each multiplier should be a number.</p>
+                <pre class="code"><code class="scss">$multipliers: (2,3,4,5);</code></pre>
+
+
+                <h4 class="mt-2x">$sizes</h4>
+                <p>An array of sizes.</p>
+                <p>Each size consists of an array with the <strong>size name</strong> and a <strong>media query</strong></p>
+                <pre class="code"><code class="scss">$sizes: (
+  (small, '(min-width: 320px) and (max-width: 480px)'),
+  (medium, '(min-width: 481px) and (max-width: 767px)'),
+  (large, '(min-width: 768px) and (max-width: 1024px)'),
+  (xlarge, '(min-width: 1025px) and (max-width: 1280px)'),
+  (xxlarge, '(min-width: 1281px)')
+);</code></pre>
+
+                <h4 class="mt-2x">$delimiter1</h4>
+                <p>The delimeter used between the property/direction and size</p>
+                <pre class="code"><code class="scss">$delimiter1: '-';</code></pre>
+
+                <h4 class="mt-2x">$delimiter2</h4>
+                <p>The delimeter used between the size and multiplier</p>
+                <pre class="code"><code class="scss">$delimiter2: '-';</code></pre>
+
+
+            </div>
+            </div>
+        </div>
+
+
+
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

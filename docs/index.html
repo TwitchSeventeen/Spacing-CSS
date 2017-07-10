@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Docs</title>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <link rel="stylesheet" href="../dist/spacing.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+    <div class="container grid-xl">
+        <div class="columns">
+            <div class="column col-3 col-md-4 col-sm-12">
+                <ul class="menu m">
+                    <li class="menu-item">
+                        <a href="index.html" class="active">Spacing CSS</a>
+                    </li>
+                    <li class="divider"></li>
+
+                    <li class="menu-item">
+                        <a href="classes.html">spacing classes</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="scss.html">SCSS variables</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="gulp.html">Gulp</a>
+                    </li>
+
+                    <li class="divider" data-content="LIBRARY BUILDS"></li>
+                    <li class="menu-item">
+                        <a href="foundation.html">Foundation</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="bootstrap.html">Bootstrap</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="column col-9 col-md-8 col-sm-12">
+
+                <h2 class="mt">Spacing CSS</h2>
+                <p>Spacing CSS is a CSS library for adding responsive margin / padding utility classes. It's sole purpose is to add space between elements.</p>
+
+                <h3 class="mt-2x">Usage</h3>
+
+Include the spacing.css file in the &#60;head> of your webpage.
+                <pre><code class="html">
+&#60;head>
+    &#60;link rel="stylesheet" href="/dist/spacing.min.css">
+&#60;/head>
+                </code></pre>
+
+                <p class="mt-2x">Then add classes to elements to create margins and padding.</p>
+                <pre><code class="html">
+    &#60;p class="mt">Top margin of 1rem&#60;/p>
+    &#60;p class="pl-2x">Left padding of 2rem&#60;/p>
+                </code></pre>
+
+                <h3 class="mt-2x">Spacing Classes</h3>
+                Each spacing class is created in the following format:
+                <pre class="code"><code>(property)(direction)-(mediaQuery)-(multiplier)</code></pre>
+                Only <em>property</em> is required, the rest can be omitted.
+
+                <p class="mt-2x">Take a look at <a href="classes.html">spacing classes</a> for all of the possible options.</p>
+
+            </div>
+            </div>
+        </div>
+
+
+
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

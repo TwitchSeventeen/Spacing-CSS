@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Docs</title>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <link rel="stylesheet" href="../dist/spacing.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+<div class="container grid-xl">
+    <div class="columns">
+        <div class="column col-3 col-md-4 col-sm-12">
+            <ul class="menu m">
+                <li class="menu-item">
+                    <a href="index.html">Spacing CSS</a>
+                </li>
+                <li class="divider"></li>
+
+                <li class="menu-item">
+                    <a href="classes.html" class="active">spacing classes</a>
+                </li>
+                <li class="menu-item">
+                    <a href="scss.html">SCSS variables</a>
+                </li>
+                <li class="menu-item">
+                    <a href="gulp.html">Gulp</a>
+                </li>
+
+
+                <li class="divider" data-content="LIBRARY BUILDS"></li>
+                <li class="menu-item">
+                    <a href="foundation.html">Foundation</a>
+                </li>
+                <li class="menu-item">
+                    <a href="bootstrap.html">Bootstrap</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="column col-9 col-md-8 col-sm-12">
+            <h2 class="mt">Spacing Classes</h2>
+            Each spacing class is created in the following format:
+            <pre class="code"><code>(property)(direction)-(mediaQuery)-(multiplier)</code></pre>
+            Only <em>property</em> is required, the rest can be omitted.
+
+            <h3 id="property" class="mt-3x">Property</h3>
+            <p>This specifies whether the spacing is margin or padding, it's the only required part of the spacing class.</p>
+            <pre class="code"><code>m - margin
+p - padding</code></pre>
+
+
+            <h3 id="direction" class="mt-3x">Direction</h3>
+            <p>This specifies the direction for the space, if you omit this value then space will be applied to all sides.</p>
+            <pre class="code"><code>t - top
+r - right
+b - bottom
+l - left
+h - horizontal
+v - vertical
+*blank* - all directions</code></pre>
+
+
+            <h3 id="media-query" class="mt-3x">Media Query</h3>
+            <p>This specifies the screen size the space should apply to. If you omit this value then the space will apply to all screen sizes.</p>
+            <pre class="code"><code class="text">small - 320px -> 480px
+medium - 481px -> 767px
+large - 768px -> 1024px
+xlarge - 1025px -> 1280px
+xxlarge - 1281px and up</code></pre>
+
+
+            <h3 id="multiplier" class="mt-3x">Multiplier</h3>
+            By default <code>1rem</code> of space is applied, this multiplier allows you to increase that amount. You can also use a multiplier of 0, which removes space. For margin you can also set a multiplier of a, which sets a margin of <code>auto</code>
+            <pre class="code"><code class="text">0 - no space
+a - auto space (margin only)
+2x - space of 2rem
+3x - space of 3rem
+4x - space of 4rem
+5x - space of 5rem</code></pre>
+
+            <h4>Example</h4>
+            <pre class="code"><code>.mt-small-2x &#60;!-- margin-top: 2rem -->
+.pb_3x &#60;!-- padding-bottom: 3rem -->
+.p-0 &#60;!-- padding: 0 -->
+.mh_a &#60;!--  margin-right: auto; margin-left: auto --></code></pre>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Docs</title>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <link rel="stylesheet" href="../dist/spacing.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+    <div class="container grid-xl">
+        <div class="columns">
+            <div class="column col-3 col-md-4 col-sm-12">
+                <ul class="menu m">
+                    <li class="menu-item">
+                        <a href="index.html">Spacing CSS</a>
+                    </li>
+                    <li class="divider"></li>
+
+                    <li class="menu-item">
+                        <a href="classes.html">spacing classes</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="scss.html">SCSS variables</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="gulp.html">Gulp</a>
+                    </li>
+
+                    <li class="divider" data-content="LIBRARY BUILDS"></li>
+                    <li class="menu-item">
+                        <a href="foundation.html" class="active">Foundation</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="bootstrap.html">Bootstrap</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="column col-9 col-md-8 col-sm-12">
+
+                <h2 class="mt">Foundation CSS</h2>
+                <p>This is a Spacing CSS build specifically for <a href="https://foundation.zurb.com/" target="_blank" rel="noopener">Foundation CSS</a></p>
+
+                <h3 class="mt-2x">Spacing class changes</h3>
+                <p>In the Foundation build, spacing classes are almost the same as the regular build - but the media queries have been changed.</p>
+
+                <h4 class="mt-2x">Media queries</h4>
+                <p>The Foundation build uses Foundation 6 default media queries. This means Spacing CSS will work out of the box with the Foundation grid system.</p>
+                <pre class="code"><code class="text">small - max-width: 39.9375em
+medium - min-width: 40em
+large - min-width: 64em</code></pre>
+
+
+
+                <p class="mt-2x">This will apply a top padding of 1rem on medium screens and above. On small screens the column will become full width and the padding will be removed.</p>
+                <pre class="code"><code class="html">&#60;div class="cell medium-6 pt-medium">
+    Lorem ipsum dolor sit amet
+&#60;/div></code></pre>
+
+            </div>
+            </div>
+        </div>
+
+
+
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
