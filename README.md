@@ -1,4 +1,7 @@
 # Spacing-CSS
+
+[![npm version](https://badge.fury.io/js/%40twitchseventeen%2Fspacing-css.svg)](https://badge.fury.io/js/%40twitchseventeen%2Fspacing-css)
+
 Spacing CSS is a CSS library for adding responsive margin / padding utility classes. It's sole purpose is to add space between elements.
 
 
