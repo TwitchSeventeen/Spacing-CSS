@@ -101,15 +101,15 @@
   }
 
   .mr#{$delimiter1}#{$multiplier}x {
-    margin-top: $space * $multiplier !important;
+    margin-right: $space * $multiplier !important;
   }
 
   .mb#{$delimiter1}#{$multiplier}x {
-    margin-top: $space * $multiplier !important;
+    margin-bottom: $space * $multiplier !important;
   }
 
   .ml#{$delimiter1}#{$multiplier}x {
-    margin-top: $space * $multiplier !important;
+    margin-left: $space * $multiplier !important;
   }
 
   .mv#{$delimiter1}#{$multiplier}x {
